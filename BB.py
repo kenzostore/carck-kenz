@@ -856,7 +856,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -931,7 +931,7 @@ class crackttl:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"•+"bisa+k+"]"+p+" Crack Berjalan, Tunggu Tod.."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -943,7 +943,7 @@ class crackttl:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -1033,7 +1033,7 @@ class crackffb:
 						except:continue
 				except Exception as e:
 					print(("   %s"%e))
-				print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+				print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				exit()
@@ -1045,7 +1045,7 @@ class crackffb:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+			print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			exit()
@@ -1108,7 +1108,7 @@ class bapi:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1130,7 +1130,7 @@ class bapi:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
@@ -1218,7 +1218,7 @@ class bapittl:
         except Exception as e:
           print(("  %s"%e))
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         #os.remove(self.apk)
         exit()
@@ -1240,7 +1240,7 @@ class bapittl:
             except:continue
         except:
           continue
-        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"•"+k+"]"+p+" Account [OK] Saved to : ok.txt"+k+"\n["+p+"•"+k+"]"+p+" Account [CP] Saved to : cp.txt"+k+"\n["+p+"•"+k+"]"+p+" If No Result, Use Airplane Mode (5 Sec)\n"))
+        print((k+"\n["+p+"+"+k+"]"+p+" Crack Berjalan, Tunggu Tod..."+k+"\n["+p+"+"+k+"]"+p+" Akun [OK] Tersimpan di : ok.txt"+k+"\n["+p+"+"+k+"]"+p+" Akun [CP] Tersimpan Di : cp.txt"+k+"\n["+p+"#"+k+"]"+p+" Jika tidak ada hasil, gunakan mode pesawat (3 detik)\n"))
         ThreadPool(30).map(self.brute,self.fl)
         os.remove(self.apk)
         exit()
