@@ -662,7 +662,7 @@ class __crack__:
     def __api__(self, user, __yan__):
         global ok,cp,loop
         rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
-        sys.stdout.write('\r [%s#%s][Retakan] %s/%s [OK-:%s][CP-:%s] "%(str(loping),len(mi),len(ok),len(cp)),
+        sys.stdout.write('\r [%s#%s][Retakan] %s/%s [OK-:%s][CP-:%s] '%(str(loping),len(mi),len(ok),len(cp))),
         c_bff_ -= 1
 			else:
 				pass
