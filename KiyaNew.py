@@ -663,11 +663,10 @@ class __crack__:
         global ok,cp,loop
         rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
         sys.stdout.write('\r [%s#%s][Retakan] %s/%s [OK-:%s][CP-:%s] "%(str(loping),len(mi),len(ok),len(cp)),
-        sys.stdout.flush()
-        for pw in __yan__:
-            pw = pw.lower()
-            try: os.mkdir('results')
-            except: pass
+        c_bff_ -= 1
+			else:
+				pass
+        
             try:
             	_kontol = open('YNTKTS.txt', 'r').read()
             except (KeyError, IOError):
