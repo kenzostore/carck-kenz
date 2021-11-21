@@ -90,9 +90,9 @@ def tod():
 
 # LO KONTOL
 logo =  ''' \033[0;96m  __  ___     ____  _   ___  ____
-\033[0;96m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0m||\033[0;96mCreated By Aang-XD
-\033[0;96m / /|_/ / // / / __/ / / _  / _/   \033[0m||\033[0;96mGithub.com/AngCyber
-\033[0;96m/_/  /_/\_,_/_/\__/_/ /____/_/ \033[0;91mv2.7\033[0m||\033[0;96mFacebook Saya Aang'''
+\033[0;96m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0m||Created By Aang-XD
+\033[0;96m / /|_/ / // / / __/ / / _  / _/   \033[0m||Github.com/AngCyber
+\033[0;96m/_/  /_/\_,_/_/\__/_/ /____/_/ \033[0;91mv2.7\033[0m||Facebook Saya Aang'''
 
 lo_ngentod = '1714009362122228'
 # crack selesai
@@ -120,7 +120,8 @@ def yayanxd():
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
         print '\n\n %s[•]%s Selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
-        print ' %s[•]%s mohon untuk menggunakan script ini sewajarnya saja, admin tidak bertanggung jawab jika script ini disalah gunakan!!'%(O,N);time.sleep(2)
+        print ' %s[•]%s Bismillah dulu biar dapet OK'%(O,N);time.sleep(2)
+        print ' %s[•]%s Subscribe channel gua dulu yakk :)'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
         raw_input(' %s[+]%s TEKAN ENTER NGAB...'%(O,N));wuhan(kontol)
         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
@@ -145,13 +146,13 @@ def moch_yayan():
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
     print '╔════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
-    print '║ (\033[0;96m•\033[0m) \033[0;96mNAMA KAMU : %s'%(nama);time.sleep(0.03)
-    print '║ (\033[0;96m•\033[0m) \033[0;96mIP KAMU   : %s'%(IP)
+    print '  (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
+    print '  (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
     print '╠════════════════════════════════════════════════════════\n';time.sleep(0.03)
-    print '║%s[•]%s \033[0;96mAuthor  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print '║%s[•]%s \033[0;96mGithub  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
-    print '║%s[•]%s \033[0;96mContact : \033[0;96m089524163441'%(O,N); time.sleep(0.03)
-    print '║%s[•]%s \033[0;96mDibuat  : \033[0;96mUntuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+    print '║%s[•]%s Author  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print '║%s[•]%s Github  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
+    print '║%s[•]%s Contact : \033[0;96m089524163441'%(O,N); time.sleep(0.03)
+    print '║%s[•]%s Dibuat  : \033[0;96mUntuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
     print '╚════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
