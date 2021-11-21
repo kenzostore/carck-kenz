@@ -148,11 +148,13 @@ def moch_yayan():
     print '╔════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
     print '  (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print '  (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
+   
     print '╠════════════════════════════════════════════════════════\n';time.sleep(0.03)
-    print '║%s[•]%s Author  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print '║%s[•]%s Github  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
-    print '║%s[•]%s Contact : \033[0;96m089524163441'%(O,N); time.sleep(0.03)
-    print '║%s[•]%s Dibuat  : \033[0;96mUntuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+    print '%s[•]%s Author  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print '%s[•]%s Github  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
+    print '%s[•]%s Contact : \033[0;96m089524163441'%(O,N); time.sleep(0.03)
+    print '%s[•]%s Dibuat  : \033[0;96mUntuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+   
     print '╚════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
