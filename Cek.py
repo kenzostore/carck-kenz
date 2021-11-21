@@ -91,9 +91,9 @@ def tod():
 # LO KONTOL
 logo = ("""
 \033[0;91m╔═══════════════════════════════════════════╗
-\033[0;97m      __|  _ \    \     __|  |  /    __| _ )
-\033[0;97m     (       /   _ \   (     . <     _|  _ \
-\033[0;97m    \___| _|_\ _/  _\ \___| _|\_\   _|  ___/
+\033[0;97m        __|  _ \    \     __|  |  /    __| _ )
+\033[0;97m       (       /   _ \   (     . <     _|  _ \
+\033[0;97m      \___| _|_\ _/  _\ \___| _|\_\   _|  ___/
 \033[0;91m╚═══════════════════════════════════════════╝
 \033[0;91m╔═══════════════════════════════════════════╗
 \033[0;91m   {\033[0;97m•\033[0;91m} \033[0;97m[•] Author   \033[0;91m: \033[0;97mAang Ardiansyah-XD
@@ -152,14 +152,14 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print '_______________________________________________________\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print '_______________________________________________________\n';time.sleep(0.03)
     print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Contact : +6289524163441'%(O,N); time.sleep(0.03)
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print '_______________________________________________________\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
