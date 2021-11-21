@@ -120,7 +120,7 @@ def yayanxd():
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
         print '\n\n %s[•]%s selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
-        print ' %s[•]%s subscribe channel gua dulu yak: :)'%O,N);time.sleep(2)
+        print ' %s[•]%s mohon untuk menggunakan sewajarnya saja...'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
         raw_input(' %s[•]%s TEKAN ENTER NGAB... '%(O,N));wuhan(kontol)
         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
