@@ -119,7 +119,7 @@ def yayanxd():
         yayanxd()
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
-        print '\n\n %s[•]%s Selamat datang --> %s%s%s'%(O,N,K,nama,N);time.sleep(2)
+        print '\n\n %s[•]%s Selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
         print ' %s[•]%s mohon untuk menggunakan script ini sewajarnya saja, admin tidak bertanggung jawab jika script ini disalah gunakan!!'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
         raw_input(' %s[+]%s TEKAN ENTER NGAB...'%(O,N));wuhan(kontol)
@@ -145,8 +145,8 @@ def moch_yayan():
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
     print '╔════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
-    print '║ {\033[0;96m•\033[0m} \033[0;96mNAMA KAMU : %s'%\033[0;96m(nama);time.sleep(0.03)
-    print '║ {\033[0;96m•\033[0m} \033[0;96mIP KAMU   : %s'%\033[0;96m(IP)
+    print '║ (\033[0;96m•\033[0m) \033[0;96mNAMA KAMU : %s'%(nama);time.sleep(0.03)
+    print '║ (\033[0;96m•\033[0m) \033[0;96mIP KAMU   : %s'%(IP)
     print '╠════════════════════════════════════════════════════════\n';time.sleep(0.03)
     print '║%s[•]%s \033[0;96mAuthor  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print '║%s[•]%s \033[0;96mGithub  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
@@ -162,7 +162,7 @@ def moch_yayan():
     print ' [%s07%s]. Lihat hasil crack saya'%(O,N);time.sleep(0.03)
     print ' [%s08%s]. Setting user agent'%(O,N);time.sleep(0.03)
     print ' [%s09%s]. Info %sscript%s'%(O,N,O,N);time.sleep(0.03)
-    print ' [%s00%s]. Logout (%shapus token%s)'%(M,N,M,N);time.sleep(0.03)
+    print ' [%s00%s]. Log Out  (%sAhh Ngecrot%s)'%(M,N,M,N);time.sleep(0.03)
     pepek = raw_input('\n [*] menu : ')
     if pepek == '':
         print '\n %s[%s×%s] JANGAN KOSONG KENTOD!!'%(N,M,N);time.sleep(2);moch_yayan()
