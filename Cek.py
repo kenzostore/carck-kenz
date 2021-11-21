@@ -102,27 +102,27 @@ def hasil(ok,cp):
         print '\n\n [%s+%s] total OK : %s%s%s'%(O,N,H,str(len(ok)),N)
         print ' [%s+%s] total CP : %s%s%s'%(O,N,K,str(len(cp)),N);exit()
     else:
-        print '\n\n [%s!%s] opshh kamu tidak mendapatkan hasil :('%(M,N);exit()
+        print '\n\n [%s!%s] wkwk gak dapet hasil :('%(M,N);exit()
 
 #masuk token
 def yayanxd():
     os.system('clear')
-    print (' %s(*)%s tools ini menggunakan login token facebook!!.\n %s(*)%s apakah kamu sudah tau cara mendapatkan token facebook?\n %s(*)%s ketik %s(OPEN)%s untuk mendapatkan token facebook.'%(O,N,O,N,O,N,H,N))
-    kontol = raw_input('\n %s[%s?%s] Masukkan Token :%s '%(N,M,N,H))
+    print (' %s[•]%s tools ini menggunakan login token facebook.\n %s[•]%s apakah sudah tau cara mendapatkan token facebook?\n %s[•]%s ketik %s(OPEN)%s untuk mendapatkan token facebook.'%(O,N,O,N,O,N,H,N))
+    kontol = raw_input('\n %s[%s?%s] Masukin Token Dulu Bro :%s '%(N,M,N,H))
     if kontol in ('open', 'Open', 'OPEN'):
         print '\n%s (*)%s NOTE!!: usahakan pakai akun tumbal login di google chrome terlebih dahulu'%(B,N);time.sleep(2)
         print '%s (*)%s jangan lupa!! url ubah ke %shttps://m.facebook.com'%(B,N,H);time.sleep(2)
         print '%s (*)%s setelah di alihkan ke google chrome. klik %stitik tiga'%(B,N,H);time.sleep(2)
         print '%s (*)%s lalu klik %sCari di Halaman%s Tinggal ketik %sEAAA%s Lalu salin.'%(B,N,H,N,H,N);time.sleep(2)
-        raw_input(' %s*%s TEKAN ENTER SAYANG '%(O,N))
+        raw_input(' %s*%s TEKAN ENTER NGAB...'%(O,N))
         os.system('xdg-open https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_')
         yayanxd()
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
-        print '\n\n %s*%s Selamat datang --> %s%s%s'%(O,N,K,nama,N);time.sleep(2)
-        print ' %s*%s mohon untuk menggunakan script ini sewajarnya saja, admin tidak bertanggung jawab jika script ini disalah gunakan!!'%(O,N);time.sleep(2)
+        print '\n\n %s[•]%s Selamat datang --> %s%s%s'%(O,N,K,nama,N);time.sleep(2)
+        print ' %s[•]%s mohon untuk menggunakan script ini sewajarnya saja, admin tidak bertanggung jawab jika script ini disalah gunakan!!'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
-        raw_input(' %s*%s TEKAN ENTER SAYANG '%(O,N));wuhan(kontol)
+        raw_input(' %s[•]%s TEKAN ENTER NGAB...'%(O,N));wuhan(kontol)
         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
         moch_yayan()
     except KeyError:
@@ -144,15 +144,15 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '╔════════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
+    print '╔══════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
     print '║ (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print '║ (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print '╠════════════════════════════════════════════════════════════\n';time.sleep(0.03)
-    print '║ %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print '║ %s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
-    print '║ %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
+    print '╠══════════════════════════════════════════════════════════\n';time.sleep(0.03)
+    print '║%s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print '║%s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
+    print '║%s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
     print '║%s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
-    print '╚════════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
+    print '╚══════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
