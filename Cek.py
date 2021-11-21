@@ -119,11 +119,11 @@ def yayanxd():
         yayanxd()
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
-        print '\n\n %s[•]%s Selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
-        print '%s[•]%s Mohon gunakan sewajarnya saja!!'%(O,N):time.sleep(2)
-        print '%s[•]%s Subscribe channel gua dulu yakk :)'%(O,N);time.sleep(2)
+        print '\n\n %s[•]%s selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
+        print ' %s[•]%s mohon gunakan sewajarnya saja,'%(O,N);time.sleep(2)
+        print ' %s[•]%s subscribe youtube gua dulu yak: :)'%O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
-        raw_input(' %s[+]%s TEKAN ENTER NGAB...'%(O,N));wuhan(kontol)
+        raw_input(' %s[•]%s tekan enter '%(O,N));wuhan(kontol)
         os.system('xdg-open https://youtube.com/channel/UCNvDaXoyAVCNJbSqtaXA-mg')
         moch_yayan()
     except KeyError:
