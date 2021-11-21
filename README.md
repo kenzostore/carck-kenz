@@ -1,10 +1,10 @@
 # Mluti_BF
 # Feature Crack
-• Crack from friends
-• Crack from publik
-• Crack from followers
-• Crack from like postingan
-_________________
+•  Crack from friends
+•  Crack from publik
+•  Crack from followers
+•  Crack from like postingan
+____________________
 # Install script on
 $ pkg update && pkg upgrade
 
