@@ -120,6 +120,7 @@ def yayanxd():
     try:
         nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(kontol)).json()['name']
         print '\n\n %s[•]%s Selamat datang -> [ %s%s%s ]'%(O,N,K,nama,N);time.sleep(2)
+        print ' %s[•]%s Selamat menggunakan script saya'%(O,N):time.sleep(2)
         print ' %s[•]%s Bismillah dulu biar dapet OK'%(O,N);time.sleep(2)
         print ' %s[•]%s Subscribe channel gua dulu yakk :)'%(O,N);time.sleep(2)
         open('.memek.txt', 'w').write(kontol)
@@ -148,14 +149,11 @@ def moch_yayan():
     print '╔════════════════════════════════════════════════════════╗\n';time.sleep(0.03)
     print '  (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print '  (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-   
     print '╠════════════════════════════════════════════════════════\n';time.sleep(0.03)
-    print '%s[•]%s Author  : \033[0;96mAang Ardiansyah-XD'%(O,N);time.sleep(0.03)
-    print '%s[•]%s Github  : \033[0;96mGithub.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
-    print '%s[•]%s Contact : \033[0;96m089524163441'%(O,N); time.sleep(0.03)
-    print '%s[•]%s Dibuat  : \033[0;96mUntuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
-   
-    print '╚════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
+    print '%s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
+    print '%s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
+    print '%s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
+    print '%s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03) print '╚════════════════════════════════════════════════════════╝\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
