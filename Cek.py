@@ -90,9 +90,9 @@ def tod():
 
 # LO KONTOL
 logo =  ''' \033[0;96m  __  ___     ____  _   ___  ____
-\033[0;96m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0m||Created By Aang-XD
-\033[0;96m / /|_/ / // / / __/ / / _  / _/   \033[0m||Github.com/AngCyber
-\033[0;96m/_/  /_/\_,_/_/\__/_/ /____/_/ \033[0;91mv2.7  \033[0m||Facebook Saya Aang'''
+\033[0;96m  /  |/  /_ __/ / /_(_) / _ )/ __/ \033[0m|•|Created By Aang-XD
+\033[0;96m / /|_/ / // / / __/ / / _  / _/   \033[0m|•|Github.com/AngCyber
+\033[0;96m/_/  /_/\_,_/_/\__/_/ /____/_/ \033[0;91mv2.7\033[0m|•|Facebook Saya Aang'''
 
 lo_ngentod = '1714009362122228'
 # crack selesai
@@ -144,14 +144,15 @@ def moch_yayan():
     os.system('clear')
     print logo
     IP = requests.get('https://www.yayanxd.my.id/server/ip/').text
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print '╔══════════════════════════════════╗\n';time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) NAMA KAMU : %s'%(nama);time.sleep(0.03)
     print ' (\033[0;96m•\033[0m) IP KAMU   : %s'%(IP)
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print '╠══════════════════════════════════\n';time.sleep(0.03)
     print ' %s[•]%s Author  : Aang Ardiansyah-XD'%(O,N);time.sleep(0.03)
     print ' %s[•]%s Github  : Github.com/AngCyber/Kiya'%(O,N);time.sleep(0.03)
-    print ' %s[•]%s Contact : +6289524163441'%(O,N); time.sleep(0.03)
-    print '___________________________________________________________\n';time.sleep(0.03)
+    print ' %s[•]%s Contact : 089524163441'%(O,N); time.sleep(0.03)
+    print ' %s[•]%s Dibuat  : Untuk Mengekrekk Pacebuk:v'%(O,N); time.sleep(0.03)
+    print '╚══════════════════════════════════╝\n';time.sleep(0.03)
     print ' [%s01%s]. Dump id dari teman'%(O,N);time.sleep(0.03)
     print ' [%s02%s]. Dump id dari teman publik'%(O,N);time.sleep(0.03)
     print ' [%s03%s]. Dump id dari total followers'%(O,N);time.sleep(0.03)
