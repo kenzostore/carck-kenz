@@ -1,14 +1,14 @@
 # version 2.9
 # Feature Crack
 •  Crack from friends
-________________
+
 •  Crack from publik
-________________
+
 •  Crack from followers
-________________
-•  Crack from like postingan
-________________
-# Install script on
+
+•  Crack from like post
+
+# Installation
 ➾ pkg update && pkg upgrade
 
 ➾ pkg install python2 git
@@ -21,7 +21,7 @@ ________________
 
 ➾ git clone https://github.com/AngCyber/Crack
 
-# Run script
+# Runn
 ➾ cd Crack
 
 ➾ ls
