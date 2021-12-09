@@ -19,7 +19,7 @@
 
 ➾ rm -rf Crack
 
-➾ git clone https://github.com/AngCyber/Crack
+➾ git clone https://github.com/kenzostore/carck-kenz.git
 
 # Runn
 ➾ cd Crack
