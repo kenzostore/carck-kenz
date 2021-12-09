@@ -31,10 +31,10 @@
 ➾ python2 Multi_BF.py
 
 # Sosial media
-WhatsApp: 089524163441
+WhatsApp: privat
 
-Facebook: Saya Aang
+Facebook: Privat
 
-Twitter : MyAldousXD
+Twitter : No Twitter
 
-YouTube : Aang-XD
+YouTube : Asu gk ounya yt
